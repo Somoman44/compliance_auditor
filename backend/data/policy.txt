@@ -1,0 +1,20 @@
+GLOBAL TECH SOLUTIONS - EMPLOYEE CODE OF CONDUCT (v4.0)
+
+# SECTION 1: DATA PRIVACY & GDPR
+## 1.1. PII Transmission: Personally Identifiable Information (PII) of EU citizens (e.g., names, emails, IPs) must never be sent via email attachments (CSV, XLS). All PII transfer must occur via the SecureTransfer Portal.
+## 1.2. Data Retention: Customer data older than 3 years must be automatically anonymized. Employees are prohibited from maintaining local copies of production databases on personal laptops.
+
+# SECTION 2: IT SECURITY & ACCESS
+## 2.1. Password Sharing: Passwords, API Secrets, and Private Keys must never be shared in plain text over messaging apps (Slack, Teams) or Email. Use the corporate 1Password vault for sharing credentials.
+## 2.2. Approved Devices: Corporate data may only be accessed from devices managed by MDM (Mobile Device Management). Accessing corporate email or Jira from unmanaged personal devices is strictly prohibited.
+
+# SECTION 3: CONFLICT OF INTEREST & ETHICS
+## 3.1. Moonlighting: Employees may not engage in freelance work or external consulting for any company that is a direct competitor or a current vendor of Global Tech Solutions.
+## 3.2. Gifts & Entertainment: Employees may not accept gifts valued over $50 USD. Outbound client entertainment (dinners, events) is capped at $100 USD per person/day.
+
+# SECTION 4: PROFESSIONAL CONDUCT
+## 4.1. Competitor Disparagement: Employees must maintain professionalism. Making disparaging, mocking, or false statements about competitors in written communication (internal or external) is prohibited.
+## 4.2. Media Relations: Only designated spokespersons may provide quotes or comments to news outlets regarding company roadmap or financial health.
+
+# SECTION 5: REMOTE WORK
+## 5.1. VPN Usage: All remote access to internal tools (Jira, Confluence, GitLab) must be routed through the Corporate VPN.
