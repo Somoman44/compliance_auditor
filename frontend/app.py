@@ -7,6 +7,9 @@ st.set_page_config(page_title="Compliance Auditor", layout="wide")
 
 st.title("Compliance Auditor")
 
+#BASE_URL1 = "http://127.0.0.1:8000"
+BASE_URL = "https://compliance-auditor.onrender.com"
+
 with st.sidebar:
     st.title('Policy File(TXT)')
     uploaded_file = st.file_uploader("upload policy text file here")
@@ -14,7 +17,7 @@ with st.sidebar:
         with st.spinner("Uploading policy",show_time=True):
             files = {'file': uploaded_file.getvalue()}
             try:
-                response = requests.post("http://127.0.0.1:8000/policy", files=files)
+                response = requests.post(f"{BASE_URL}/policy", files=files)
                 if response.status_code == 200:
                     st.session_state.uploaded = True
                     st.session_state.policy_text = uploaded_file.getvalue().decode('utf-8')
@@ -49,7 +52,7 @@ if uploaded_file is not None:
             result = []
             for num,doc in enumerate(docs,1):
                 body = {'s': doc}
-                response1 = requests.post("http://127.0.0.1:8000/check_compliance", json=body)
+                response1 = requests.post(f"{BASE_URL}/check_compliance", json=body)
                 result.append(response1.json())
 
             total = max(len(result),1)
@@ -114,6 +117,6 @@ if uploaded_file is not None:
 
 
 elif uploaded_file is None:
-    requests.post("http://127.0.0.1:8000/delete")
+    requests.post(f"{BASE_URL}/delete")
     if st.session_state.draft is not None:
         st.write('upload policy first!!')
