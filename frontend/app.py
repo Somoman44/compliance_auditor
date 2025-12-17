@@ -30,7 +30,7 @@ submit = False
 
 
 with st.form("Draft"):
-    st.write("enter you draft here")
+    st.write("Enter you draft here")
     draft_input = st.text_area("")
     submit = st.form_submit_button("Submit")
     if submit:
